@@ -2,6 +2,9 @@ import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
 
 export default defineConfig({
+      server: {
+            host: '127.0.0.1',
+      },
       plugins: [
             laravel({
                   input: [
@@ -11,4 +14,18 @@ export default defineConfig({
                   refresh: true,
             }),
       ],
+      css: {
+            preprocessorOptions: {
+                  scss: {
+                        silenceDeprecations: [
+                              'import',
+                              'global-builtin',
+                              'color-functions',
+                              'if-function',
+                              'abs-percent',
+                        ],
+                        quietDeps: true,
+                  },
+            },
+      },
 });

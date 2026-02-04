@@ -1,8 +1,8 @@
 <!-- Navbar -->
-<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+<nav class="main-header navbar navbar-expand navbar-white navbar-light border-bottom-0 shadow-none">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
-        <li class="nav-item">
+        <li class="nav-item d-lg-none">
             <a class="nav-link" data-widget="pushmenu" href="{{ route('home') }}" role="button">
                 <i class="fas fa-bars"></i>
             </a>

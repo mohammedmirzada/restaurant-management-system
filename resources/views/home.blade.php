@@ -5,7 +5,7 @@
    <div class="row">
       <div class="col-lg-3 col-6">
          <!-- small box -->
-         <div class="small-box bg-info">
+         <div class="small-box bg-light">
             <div class="inner">
                <h3>{{$orders_count}}</h3>
                <p>{{ __('dashboard.Orders_Count') }}</p>
@@ -19,7 +19,7 @@
       <!-- ./col -->
       <div class="col-lg-3 col-6">
          <!-- small box -->
-         <div class="small-box bg-success">
+         <div class="small-box bg-light">
             <div class="inner">
                <h3>{{config('settings.currency_symbol')}} {{number_format($income, 2)}}</h3>
                <p>{{ __('dashboard.Income') }}</p>
@@ -33,7 +33,7 @@
       <!-- ./col -->
       <div class="col-lg-3 col-6">
          <!-- small box -->
-         <div class="small-box bg-danger">
+         <div class="small-box bg-light">
             <div class="inner">
                <h3>{{config('settings.currency_symbol')}} {{number_format($income_today, 2)}}</h3>
                <p>{{ __('dashboard.Income_Today') }}</p>
@@ -47,7 +47,7 @@
       <!-- ./col -->
       <div class="col-lg-3 col-6">
          <!-- small box -->
-         <div class="small-box bg-warning">
+         <div class="small-box bg-light">
             <div class="inner">
                <h3>{{$customers_count}}</h3>
                <p>{{ __('dashboard.Customers_Count') }}</p>

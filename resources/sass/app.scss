@@ -57,3 +57,64 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
         max-height: 70px;
     }
 }
+
+// Custom Light Sidebar Styles
+.main-sidebar {
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+    width: 280px !important;
+    
+    .brand-link {
+        background-color: #ffffff;
+        border-bottom: none;
+        color: #343a40;
+        
+        &:hover {
+            color: #007bff;
+        }
+    }
+    
+    .nav-sidebar .nav-link {
+        color: #495057;
+        
+        &:hover {
+            background-color: #f8f9fa;
+            color: #007bff;
+        }
+        
+        &.active {
+            background-color: #007bff;
+            color: #ffffff;
+            
+            .nav-icon {
+                color: #ffffff;
+            }
+        }
+        
+        .nav-icon {
+            color: #6c757d;
+        }
+    }
+    
+    .nav-header {
+        color: #6c757d;
+        font-weight: 600;
+    }
+    
+    .nav-treeview {
+        background-color: #f8f9fa;
+        
+        .nav-link {
+            color: #495057;
+            
+            &:hover {
+                color: #007bff;
+            }
+            
+            &.active {
+                background-color: #007bff;
+                color: #ffffff;
+            }
+        }
+    }
+}
